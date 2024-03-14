@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Logo Styles */
+.logo {
+  margin: 0 auto; /* Centers the logo horizontally */
+  text-align: center; /* Aligns the logo's content (if any) to the center */
+  flex: 1; /* Allows the logo to grow and fill available space */
+}
+
+.logo-img {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  border-radius: 50%;
+}
+
+.title {
+  color: #ffff00; /* Yellow color */
+  margin: 0; /* Remove default margin */
+  padding: 0 10px; /* Add some space between the logo and title */
+  font-size: 24px; /* Adjust font size as needed */
+  line-height: 50px; /* Vertical alignment with the logo */
+  margin-right:0 auto; /* Pushes the title to the far right */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #343a40;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-left: 10px; 
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: auto; 
+}
+
+.navbar ul li a:hover {
+  color: #ffff00;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ced4da;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item .form-check-input {
+  margin: 0;
+}
+
+
+.form-control-lg {
+  border-radius: 0;
+  border-color: #ced4da;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+
+.select {
+  padding: 0.5rem;
+  border-radius: 0;
+  border-color: #ced4da;
+}
+
+
+.text-primary {
+  color: #007bff;
+}
+
+.text-info {
+  color: #17a2b8;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+
+.list-group-item .text-muted {
+  text-decoration: none;
+}
+
+/* Card Separator */
+.card + .card {
+  border-top: 1px solid #ced4da;
+}
+
+
+.btn {
+  margin-top: 2px;
+  border-radius: 2px;
+  color: wheat;
+}
+.content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#personalInfo, #contactForm {
+  margin-bottom: 40px;
+}
+
+#personalInfo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+} 
+.label {
+  display: inline-block;
+  width: 100px; 
+  margin-right: 10px; 
+  text-align: right; 
+}
+
+.area {
+  width: calc(50% - 110px);
+  vertical-align: top; 
+}
+
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
