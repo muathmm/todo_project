@@ -1,5 +1,6 @@
-/* General Styles */
+
 body {
+  box-sizing: content-box;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,34 +12,34 @@ body {
   margin: 0 auto;
 }
 
-/* Logo Styles */
+
 .logo {
-  margin: 0 auto; /* Centers the logo horizontally */
-  text-align: center; /* Aligns the logo's content (if any) to the center */
-  flex: 1; /* Allows the logo to grow and fill available space */
+  margin: 0 auto; 
+  text-align: center; 
+  flex: 1; 
 }
 
 .logo-img {
-  width: 50px; /* Adjust as needed */
-  height: 50px; /* Adjust as needed */
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
 .title {
-  color: #ffff00; /* Yellow color */
-  margin: 0; /* Remove default margin */
-  padding: 0 10px; /* Add some space between the logo and title */
-  font-size: 24px; /* Adjust font size as needed */
-  line-height: 50px; /* Vertical alignment with the logo */
-  margin-right:0 auto; /* Pushes the title to the far right */
+  color: #ffff00; 
+  margin: 0;
+  padding: 0 10px; 
+  font-size: 24px;
+  line-height: 50px; 
+  margin-right:0 auto; 
 }
 
-/* Navigation Bar Styles */
+
 .navbar {
   background-color: #343a40;
   padding: 0.5rem 1rem;
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center;
 }
 
 .navbar ul {
@@ -64,27 +65,29 @@ body {
 
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ced4da;
+  border: 1px solid #eeefef;
+  border-radius: 30px;
+  background: rgb(216, 245, 130);
+  box-shadow: rgba(190, 227, 122, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
 }
 
 
 .card {
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
 .card-body {
+ 
+  border-radius: 30px;
+  background: hsl(72, 83%, 84%);
+  box-shadow: hsla(67, 90%, 72%, 0.251) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+ 
   padding: 1.25rem;
 }
 
 
-.list-group-item {
-  border: none;
-}
-
-.list-group-item .form-check-input {
-  margin: 0;
-}
 
 
 .form-control-lg {
@@ -92,9 +95,70 @@ body {
   border-color: #ced4da;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border: none;
+.input {
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid hsl(236, 92%, 66%);
+  outline: none;
+  transition: 200ms ease-in;
+  padding-left: 1rem;
+}
+
+.input:focus {
+  border-bottom: 4px solid hsl(236, 92%, 66%);
+  padding-top: 2px;
+}
+
+.input::placeholder {
+  color: hsl(236, 92%, 66%);
+  opacity: 0.5;
+}
+
+.date {
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid hsl(236, 92%, 66%);
+  outline: none;
+  transition: 200ms ease-in;
+  padding-left: 1rem;
+}
+
+.date:focus {
+  border-bottom: 4px solid hsl(236, 92%, 66%);
+  padding-top: 2px;
+}
+
+.date::placeholder {
+  color: hsl(236, 92%, 66%);
+  opacity: 0.5;
+}
+
+
+.btn {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2ba8fb;
+  color: white;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  display: block;
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }
 
 
@@ -154,7 +218,7 @@ body {
   border-radius: 61px;
   border-radius: 50px;
   background: linear-gradient(145deg, #fff68f, #e0cf79);
-  box-shadow:  20px 20px 60px #d4c472,
+  box-shadow:  10px 10px 30px #d4c472,
                -20px -20px 60px #ffff9a;
 }
 
@@ -184,12 +248,53 @@ main {
   width: calc(50% - 110px);
   vertical-align: top; 
 }
-.submit{
-  background-color: rgb(78, 78, 239);
-  color: white;
-  padding: 7px;
-  border-radius: 5px;
-}
+.submit {
+  margin: auto;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .3s;
+ }
+ 
+ .submit:active,
+ .submit:hover {
+  outline: 0;
+ }
+ 
+ .submit span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+ }
+ 
+ .submit:hover span {
+  background: none;
+ }
+ 
+ .submit:active {
+  transform: scale(0.9);
+ }
 
 
 footer {
