@@ -24,5 +24,4 @@ if(!confirm){
     }
 }
 
-//document.getElementById('todo').innerHTML="hello world"
-//document.getElementById('todo').style.fontSize='5px';
+
