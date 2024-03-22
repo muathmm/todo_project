@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -36,7 +36,9 @@ body {
 
 
 .navbar {
-  background-color: #343a40;
+  background-color:  rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
@@ -81,7 +83,7 @@ body {
 .card-body {
  
   border-radius: 30px;
-  background: hsl(72, 83%, 84%);
+  background: hsl(71, 47%, 91%);
   box-shadow: hsla(67, 90%, 72%, 0.251) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
  
   padding: 1.25rem;
@@ -94,14 +96,28 @@ body {
   border-radius: 0;
   border-color: #ced4da;
 }
+.cont{
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+label{
+  text-align: center;
+  padding-top: 10px;
+  color:#343a40;
+  margin: 5px;
 
+}
 .input {
+  width: 180px;
   height: 40px;
   border-radius: 8px;
   border: 2px solid hsl(236, 92%, 66%);
   outline: none;
   transition: 200ms ease-in;
   padding-left: 1rem;
+  
 }
 
 .input:focus {
@@ -110,12 +126,13 @@ body {
 }
 
 .input::placeholder {
-  color: hsl(236, 92%, 66%);
+  color: hsl(240, 3%, 15%);
   opacity: 0.5;
 }
 
 .date {
   height: 40px;
+  width: 180px;
   border-radius: 8px;
   border: 2px solid hsl(236, 92%, 66%);
   outline: none;
@@ -135,6 +152,7 @@ body {
 
 
 .btn {
+ 
   padding: 12.5px 30px;
   border: 0;
   border-radius: 100px;
@@ -144,7 +162,8 @@ body {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   display: block;
-  margin: auto;
+  margin:20px auto ;
+  
 }
 
 .btn:hover {
@@ -161,6 +180,12 @@ body {
   transform: scale(0.98);
 }
 
+.d-flex{
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
 
 .select {
   padding: 0.5rem;
@@ -169,34 +194,7 @@ body {
 }
 
 
-.text-primary {
-  color: #007bff;
-}
 
-.text-info {
-  color: #17a2b8;
-}
-
-.text-danger {
-  color: #dc3545;
-}
-
-.text-muted {
-  color: #6c757d;
-}
-
-.text-warning {
-  color: #ffc107;
-}
-
-.bg-transparent {
-  background-color: transparent;
-}
-
-
-.list-group-item .text-muted {
-  text-decoration: none;
-}
 
 /* Card Separator */
 .card + .card {
@@ -212,14 +210,13 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  width:50%;
+  width:60%;
   margin: 20px auto;
   text-align: center;
-  border-radius: 61px;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #fff68f, #e0cf79);
-  box-shadow:  10px 10px 30px #d4c472,
-               -20px -20px 60px #ffff9a;
+  border-radius: 30px;
+  background: linear-gradient(145deg, hsl(55, 63%, 88%), hsl(50, 53%, 85%));
+  box-shadow:  10px 10px 30px hsl(47, 20%, 64%),
+               -20px -20px 60px hsl(60, 21%, 68%);
 }
 
 main {
@@ -227,8 +224,10 @@ main {
   margin-top: 20px;
 }
 
-#personalInfo, #contactForm {
+ #contactForm {
   margin-bottom: 40px;
+  
+  
 }
 
 #personalInfo img {
@@ -243,18 +242,19 @@ main {
   margin-right: 10px; 
   text-align: right; 
 }
-
+ 
 .area {
-  width: calc(50% - 110px);
+  width: 230px;
   vertical-align: top; 
 }
 .submit {
   margin: auto;
+  margin-top: 20px;
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg,#6f29f2, #beb6ef 50%,#00DDEB);
   border: 0;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: rgba(56, 189, 241, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
   color: #FFFFFF;
   display: flex;
@@ -496,7 +496,7 @@ footer p {
 
   .table-active,
   .table-active > th,
-  .table-active > td {
+   .table-active > td {
     background-color: rgba(0, 0, 0, 0.075);
   }
 
@@ -542,6 +542,18 @@ footer p {
 
   .table-dark.table-hover tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.075);
+  }
+
+  .cont-info{
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeefef;
+    border-radius: 30px;
+    border-radius: 30px;
+  background: hsl(71, 47%, 91%);
+  box-shadow: hsla(67, 90%, 72%, 0.251) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+
   }
 
 

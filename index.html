@@ -22,13 +22,13 @@
         </nav>
     </header>
     <section class="vh-100">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="container">
+          <div class="row d-flex ">
             <div class="col">
-              <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
-                <div class="card-body py-4 px-4 px-md-5">
+              <div class="card" id="list1" >
+                <div class="card-body">
       
-                  <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                  <p class="h1 text-center">
                     <i class="fas fa-check-square me-1"></i>
                     <h3>My Todo-list</h3>
                   </p>
@@ -36,18 +36,17 @@
                   <div class="pb-2">
                     <div class="card">
                       <div class="card-body">
-                        <div class="d-flex flex-row align-items-center">
-                          <label for="text">add your task</label><br>
+                        <div >
+                          <div class="cont">
+                          <label for="text">add your task</label>
                           <textarea class="input" name="text" type="text" placeholder=" your task"></textarea>
                             <br>
-                            <label for="date"> add the date</label><br>
+                            <label for="date"> add the date</label>
                             <input type="date" name="date" class="date">
-
-                          <a href="#!" data-mdb-toggle="tooltip" title="Set due date"><i
-                              class="fas fa-calendar-alt fa-lg me-3"></i></a>
-                          <div>
-                            <button type="button" class="btn ">Add Task</button>
+                          
+                           
                           </div>
+                          <button type="button" class="btn ">Add Task</button>
                         </div>
                       </div>
                     </div>
@@ -55,7 +54,7 @@
       
                   <hr class="my-4">
       
-                  <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
+                  <div class="d-flex ">
                     <p class="small mb-0 me-2 text-muted">Filter</p>
                     <select class="select">
                       <option value="1">All</option>
@@ -126,7 +125,13 @@
             </div>
           </div>
         </div>
+        <footer>
+      
+          <p>&copy; 2024 My web page. All rights reserved.</p>
+          <p>For any inquiries, please email:muathmhawich1@gmail.com</p>
+      </footer>
       </section>
+     
       <script src="/app.js"></script>
 </body>
 </html>
