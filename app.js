@@ -23,5 +23,21 @@ if(!confirm){
         window.alert(`welcom  ${Name} in  your Todo list !!`)
     }
 }
+// lab-6
+function ListOfQuestion(){
+    let KeyWordQuestion=['do you have a job?','are you a student?','are you married?']
+    let AnswerOfQuestion=new Array();
+    for (let i=0;i<3;i++){
+        let Answer=window.prompt('please answer Yes or No to the flowing question \n '+KeyWordQuestion[i]);
+        if (Answer.toLowerCase()=='yes' ||Answer.toLowerCase()=='no'){
+        AnswerOfQuestion.push(Answer);
+        }
+        else{
+            AnswerOfQuestion.push('invalid');
+        }
+        console.log(`Answer- ${i+1}:`+AnswerOfQuestion[i]);
 
+    }
 
+}
+ListOfQuestion();
