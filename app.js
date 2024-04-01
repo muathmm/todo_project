@@ -35,9 +35,19 @@ function ListOfQuestion(){
         else{
             AnswerOfQuestion.push('invalid');
         }
-        console.log(`Answer- ${i+1}:`+AnswerOfQuestion[i]);
+        
 
     }
+    return AnswerOfQuestion
 
 }
-ListOfQuestion();
+let answer= ListOfQuestion();
+
+function printAnswers(){
+
+ for(let i=0;i<answer.length;i++){
+    console.log(`answer ${i}: ${answer[i]}`);
+ }
+}
+
+printAnswers();
